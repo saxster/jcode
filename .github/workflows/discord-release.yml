@@ -1,6 +1,8 @@
 name: Announce release on Discord
 
 on:
+  push:
+    branches: [main]
   # Covers releases published outside the tag-driven release workflow. Events
   # created by GITHUB_TOKEN are suppressed, so release.yml also dispatches this
   # workflow explicitly after it publishes a release.
